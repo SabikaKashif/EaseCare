@@ -1,0 +1,38 @@
+.scroll-section {
+    display: none;
+    padding: 50px 0;
+}
+
+.scroll-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.scroll-text {
+    max-width: 50%;
+}
+
+/* Animation for showing the scroll section */
+.show {
+    display: flex;
+    animation: fadeInUp 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
